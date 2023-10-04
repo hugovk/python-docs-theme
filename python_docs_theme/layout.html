@@ -46,12 +46,12 @@
 {%- macro searchbox() %}
 {# modified from sphinx/themes/basic/searchbox.html #}
     {%- if builder != "htmlhelp" %}
-    <div class="inline-search" role="search">
+    <search class="inline-search" role="search">
         <form class="inline-search" action="{{ pathto('search') }}" method="get">
           <input placeholder="{{ _('Quick search') }}" aria-label="{{ _('Quick search') }}" type="search" name="q" id="search-box" />
           <input type="submit" value="{{ _('Go') }}" />
         </form>
-    </div>
+    </search>
     {%- endif %}
 {%- endmacro %}
 
