@@ -2,9 +2,6 @@ name: Tests
 
 on: [push, pull_request, workflow_dispatch]
 
-env:
-  FORCE_COLOR: 1
-
 jobs:
   build_doc:
     name: Build CPython docs
