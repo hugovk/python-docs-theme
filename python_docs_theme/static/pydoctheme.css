@@ -30,7 +30,7 @@ pre {
 }
 
 a {
-    text-decoration: underline 1px;
+    text-decoration: underline dotted 1px;
     text-underline-offset: 0.3em;
 }
 
