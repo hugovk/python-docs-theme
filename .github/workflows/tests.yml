@@ -39,7 +39,7 @@ jobs:
           --log-directory ./logs
           --group "$(id -g)"
           --skip-cache-invalidation
-          --theme "$(pwd)"
+          --theme git+https://github.com/hugovk/python-docs-theme@sphinx9
           --languages en
           --branches ${{ matrix.branch || matrix.python-version }}
           ${{ matrix.branch == 'main' && '--select-output no-html' || '' }}
