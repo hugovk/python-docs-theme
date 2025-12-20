@@ -29,7 +29,7 @@ classifiers = [
 dynamic = [ "version" ]
 
 dependencies = [
-  "sphinx>=7.3",
+  "sphinx>=9.1.0rc1",
 ]
 
 urls.Code = "https://github.com/python/python-docs-theme"
