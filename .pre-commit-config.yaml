@@ -46,6 +46,8 @@ repos:
     rev: v0.25
     hooks:
       - id: validate-pyproject
+        additional_dependencies:
+          - trove-classifiers>=2026.5.7.17  # For Python 3.16
 
   - repo: meta
     hooks:
