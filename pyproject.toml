@@ -10,7 +10,7 @@ name = "python-docs-theme"
 description = "The Sphinx theme for the CPython docs and related projects"
 readme = "README.md"
 license = "PSF-2.0"
-license-files = [ "LICENSE" ]
+license-files = [ "LICENSE", "python_docs_theme/static/fonts/OFL.txt" ]
 authors = [ { name = "Python Docs Sphinx Theme maintainers" } ]
 requires-python = ">=3.12"
 classifiers = [
@@ -24,6 +24,7 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: 3.15",
+  "Programming Language :: Python :: 3.16",
   "Topic :: Documentation",
   "Topic :: Software Development :: Documentation",
 ]
@@ -42,7 +43,10 @@ version.path = "python_docs_theme/__init__.py"
 build.artifacts = [ "python_docs_theme/locale/**/*.mo" ]
 build.hooks.custom.path = "babel_runner.py"
 build.targets.wheel.packages = [ "python_docs_theme" ]
-build.targets.wheel.exclude = [ "python_docs_theme/locale/**/*.po" ]
+build.targets.wheel.exclude = [
+  "python_docs_theme/locale/**/*.po",
+  "python_docs_theme/static/fonts/OFL.txt",
+]
 
 [tool.ruff]
 fix = true
@@ -70,4 +74,4 @@ lint.ignore = [
 lint.isort.required-imports = [ "from __future__ import annotations" ]
 
 [tool.pyproject-fmt]
-max_supported_python = "3.15"
+max_supported_python = "3.16"
